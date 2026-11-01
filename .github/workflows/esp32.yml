@@ -31,7 +31,7 @@ jobs:
         arduino-cli core install esp32:esp32
         
         # Compile firmware
-        mv *.ino wifi-disconnect-detector.ino
+        mv *.ino esp32-deauth-detector.ino
         arduino-cli compile --fqbn esp32:esp32:esp32 --output-dir firmware .
         
         # Rename
@@ -39,7 +39,7 @@ jobs:
         rm firmware/*.ino.bootloader.bin  
         rm firmware/*.ino.partitions.bin
         
-        mv firmware/*.ino.merged.bin      firmware/esp32-wifidetect-0x0.bin
+        mv firmware/*.ino.merged.bin      firmware/esp32-deauthdetect-0x0.bin
         mv firmware/*.bin .
         
     - name: Commit firmware binary
