@@ -28,7 +28,7 @@ static constexpr uint32_t DNS_MS            = 100;
 static constexpr uint32_t HTTP_BODY_MAX     = 2048;
 
 // ---------------- Config ----------------
-static constexpr uint32_t CFG_MAGIC   = 0x45535033u; // "ESP3"
+static constexpr uint32_t CFG_MAGIC   = 0x45535033u;
 static constexpr uint16_t CFG_VERSION = 3;
 static constexpr size_t   SSID_MAX    = 32;
 static constexpr size_t   PASS_MAX    = 64;
